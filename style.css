@@ -1,0 +1,147 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    background-color: hsl(30, 38%, 92%);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    font-size: 2rem;
+    line-height: 1;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.73rem;
+    letter-spacing: 5px;
+}
+
+p {
+    font-size: 0.89rem;
+    line-height: 1.6;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+    height: 46px;
+    margin: auto;
+    border-radius: 8px;
+    border: none;
+    background-color: hsl(158, 36%, 37%);
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(0, 0%, 100%);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+
+button:hover {
+    background-color: hsl(158, 36%, 25%);
+    cursor: pointer;
+}
+
+p, h1 {
+    padding-bottom: 25px;
+}
+
+h5 {
+    padding-bottom: 20px;
+}
+
+
+.cart-icon {
+    padding-right: 10px;
+}
+
+.imagemobile {
+    display: none;
+}
+
+#main-card, #left-side, #right-side {
+    display: flex;
+}
+
+#main-card {
+    width: 600px;
+    height: 450px;
+    border-radius: 10px;
+    margin: auto;
+    overflow: hidden;
+}
+
+#left-side {
+    flex-basis: 50%;
+    background-color: aqua;
+}
+
+#right-side {
+    flex-direction: column;
+    background-color: white;
+    padding: 33px;
+    flex-basis: 50%;
+}
+
+#discount {
+    font-family: 'Fraunces', serif;
+    font-size: 2rem;
+    color: hsl(158, 36%, 37%);
+}
+
+#price {
+    text-decoration: line-through;
+    font-size: 0.8rem;
+    margin-left: 15px;
+}
+
+#price-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 27px;
+}
+
+p, h5, #price {
+    color: hsl(228, 12%, 48%);
+}
+
+.imagedesktop, .imagemobile {
+    max-width: 100%;
+}
+
+@media (max-width: 640px) {
+    .imagedesktop {
+        display: none;
+    }
+
+    .imagemobile {
+        display: block;
+    }
+
+    #left-side, #right-side, #main-card {
+        width: 100%;
+    }
+
+    #main-card {
+        height: auto;
+        flex-direction: column;
+    }
+}
