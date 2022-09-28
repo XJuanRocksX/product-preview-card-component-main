@@ -1,6 +1,7 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+/* Needs a better CSS reset*/
 * {
     box-sizing: border-box;
     margin: 0;
@@ -24,13 +25,6 @@ h1 {
     color: hsl(212, 21%, 14%);
     font-size: 2rem;
     line-height: 1;
-}
-
-h5 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    font-size: 0.73rem;
-    letter-spacing: 5px;
 }
 
 p {
@@ -64,10 +58,14 @@ p, h1 {
     padding-bottom: 25px;
 }
 
-h5 {
-    padding-bottom: 20px;
+.perfume {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 0.75rem;
+    letter-spacing: 5px;
+    line-height: 1.2;
+    padding-bottom: 21px;
 }
-
 
 .cart-icon {
     padding-right: 10px;
@@ -76,6 +74,17 @@ h5 {
 .imagemobile {
     display: none;
 }
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
 
 #main-card, #left-side, #right-side {
     display: flex;
@@ -97,7 +106,7 @@ h5 {
 #right-side {
     flex-direction: column;
     background-color: white;
-    padding: 33px;
+    padding: 32px;
     flex-basis: 50%;
 }
 
@@ -108,9 +117,8 @@ h5 {
 }
 
 #price {
-    text-decoration: line-through;
     font-size: 0.8rem;
-    margin-left: 15px;
+    margin-left: 18px;
 }
 
 #price-container{
@@ -119,7 +127,7 @@ h5 {
     margin-bottom: 27px;
 }
 
-p, h5, #price {
+p, .perfume, #price {
     color: hsl(228, 12%, 48%);
 }
 
